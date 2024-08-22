@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+
+public class Solution  {
+    public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+int n = scanner.nextInt();
+       int rounded = NearestValue(n);
+         System.out.println("" + rounded);
+    }
+        public static int NearestValue(int n){
+       return  (((n / 10)+ ((n % 10) /5)) * 10);
+        }
+}
