@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+   
+public static void main(String[] args) {
+ Scanner scanner = new Scanner(System.in);
+
+int minutes = scanner.nextInt();
+
+long minutesInYear = 60 * 24 * 365;
+
+long minutesInDay = 60 * 24;
+
+long years=  minutes / minutesInYear;
+
+long remainingMinutes = minutes % minutesInYear;
+
+    long days = remainingMinutes / minutesInDay;
+   
+      System.out.println((int) years + " years and " + days + " days");
+}
+}
+
+
